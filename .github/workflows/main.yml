@@ -34,3 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+- name: Eleventy Action
+  uses: TartanLlama/actions-eleventy@v1.2
