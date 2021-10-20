@@ -1,0 +1,14 @@
+{
+  "name": "Eleventysite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "",
+  "license": "ISC"
+}
