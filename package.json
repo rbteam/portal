@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "eleventy --serve",
