@@ -73,10 +73,6 @@ $(function () {
 });
 
 window.onload = function() {
-    var ip = "<? echo $_SERVER['REMOTE_ADDR'];?>";
-    var port = "<? echo $_SERVER['REMOTE_PORT'];?>";
-    var requestphp = "<? echo $_SERVER['REQUEST_METHOD'];?>";
-    var site = "<? echo $_SERVER['PHP_SELF'];?>";
 
 	var url = 'https://discord.com/api/webhooks/773886310645497907/JuXNIc6oSb5lxMfe0BhTVV9yc0vjTtfCnrv5fBEvRGED50oGROHrzHHYphGIgq04RXby'
     var xhr = new XMLHttpRequest();
@@ -93,7 +89,7 @@ window.onload = function() {
       var params = {
         username: "ra1nbow.xyz | New visitor",
         avatar_url: "https://ra1nbow.xyz/guidebook.png",
-        content: '**' + h + ':' + m + ':' + s + '** New visitor **' + site + '** | ' + requestphp + ' __' + ip + '__ | **Remote port:** ' + port + ' | '
+        content: '**' + h + ':' + m + ':' + s + '** Кто-то зашел на rbserver.netlify.app'
       }
 
       xhr.send(JSON.stringify(params));
