@@ -1,19 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ 'css/styles.css' | url }}">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ title }} </title>
+    <meta name="description"
+          content="{{ subtitle }}"/>
+
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
+
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
 </head>
 <body>
-    {{ lang }}
-    {{ author }}
-    {{ editors }}
-    <article>
-        {{ content | safe }}
-    </article>
-    Published: {{ page.date.toDateString() }}
+
+<!--navigation-->
+<section class="smart-scroll">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll text-uppercase" href="/">
+                            Главная
+                        </a>
+                    </li>
+                    {%- for page in collections.languages -%}
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll text-uppercase" href="{{ page.data.url }}">
+                            {{ page.data.title }}
+                        </a>
+                    </li>
+                    {%- endfor -%}
+                    </ul>
+                <ul>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<section class="py-7" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="text-uppercase">{{ title }}</h2>
+                <p class="text-muted lead">Автор: {{ author }}</p>
+                <p class="text-muted lead">Редакторы: {{ editors }}</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                        {{ content | safe }}
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mx-auto text-center">
+                <h5 class="mb-4">Заметили ошибку?</h5>
+                <a href="{{ url }}" class="btn btn-primary">Редактировать на Github</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mr-auto">
+                <h5>Что это</h5>
+                <p class="text-muted">Проект Rainbow's Server созданный для помощи в обучении программистам разного уровня. Чтобы дополнить материал или исправить ошибку, <a href="https://github.com/rbteam/eleventy_template/pulls" style="color: #1de9b6;">отправьте Пулл Реквест</a>.</p>
+                <ul class="list-inline social social-lg">
+                    <li class="list-inline-item mr-4">
+                        <a href="https://discord.gg/CtRp5GB"><img src="{{ '/img/rainbowsserver.png' | url }}" width="40" alt=""></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{{ '/img/romanov.png' | url }}" width="220" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Ссылки</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://ra1nbow.xyz/rbs" target="_blank">Страница сервера</a></li>
+                    <li><a href="#">Гитхаб</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-muted text-center small-xl">
+                &copy; 2021 Rainbow's Server - Все права защищены
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="{{ '/js/scripts.js' | url }}"></script>
 </body>
 </html>

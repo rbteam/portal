@@ -1,17 +1,8 @@
 ---
-title: Это заголовок
+title: Rainbow's Server. Языки программирования.
 layout: base.njk
+subtitle: Образовательный портал. Книги, уроки, сервисы и другое
+github: https://github.com/rbteam/eleventy_template/
 ---
-### Тестовая страница
 
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ipsum repudiandae est incidunt dicta ab sed, culpa doloribus aperiam quisquam omnis reprehenderit aliquam eius ducimus iusto quis unde laborum a libero totam quidem illo molestias minima facere! Neque, iusto ex.
-
-# заголовок
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, facilis.
-
-# Все страницы
-
-{%  for page in collections.languages %}
-    [{{ page.data.title }}]({{ page.url }})
-{% endfor %}
+Проект Rainbow's Server созданный для помощи в обучении программистам разного уровня. Чтобы дополнить материал или исправить ошибку, <a href="https://github.com/rbteam/eleventy_template/pulls" style="color: #1de9b6;">отправьте Пулл Реквест</a>.
