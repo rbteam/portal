@@ -22,6 +22,18 @@ github: Ссылка на файл
 ---
 ```
 
+Пример служебной информации:
+```markdown
+---
+title: HTML/CSS
+url: /pages/html_css/index.html
+langs: HTML, CSS
+author: ra1nbow1
+editors: ra1nbow1
+github: https://github.com/rbteam/portal/tree/main/src/pages/html_css.md
+---
+```
+
 Затем идет содержание файла - пункты, которые будут отображаться, например, список книг или ссылки на видеоуроки. Каждый пункт оформляется следующим образом:
 
 ```html
