@@ -1,5 +1,5 @@
 ---
-title: Java.
+title: Java
 url: /pages/java/index.html
 langs: Java
 author: Lato
