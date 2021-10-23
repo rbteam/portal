@@ -2,7 +2,7 @@
 title: JAVASCRIPT
 url: /pages/javascript/index.html
 langs: JavaScript
-authors: ra1nbow1, lattelix
+authors: ra1nbow1
 editors:
 github: https://github.com/rbteam/portal/tree/main/src/pages/javascript.md
 ---
