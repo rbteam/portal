@@ -2,8 +2,8 @@
 title: JAVASCRIPT
 url: /pages/javascript/index.html
 langs: JavaScript
-author: ra1nbow1
-editors: lattelix
+authors: ra1nbow1, lattelix
+editors:
 github: https://github.com/rbteam/portal/tree/main/src/pages/javascript.md
 ---
 <div class="col-md-6 mb-5">
@@ -20,5 +20,4 @@ github: https://github.com/rbteam/portal/tree/main/src/pages/javascript.md
     «Выразительный JavaScript» позволит глубоко погрузиться в тему, научиться писать красивый и эффективный код. Вы познакомитесь с синтаксисом, стрелочными и асинхронными функциями, итератором, шаблонными строками и блочной областью видимости.
     </p>
     <a href="https://www.gotoadm.ru/files/eloquentjavascript_ru.pdf" class="btn btn-primary">Скачать</a>
-    <a href="https://eloquentjavascript.net" class="btn btn-primary">web версии</a>
 </div>
