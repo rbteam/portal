@@ -2,7 +2,7 @@
 title: Java
 url: /pages/java/index.html
 langs: Java
-author: Lato
+authors: Lato
 editors: Lato, ra1nbow1
 github: https://github.com/rbteam/portal/tree/main/src/pages/java.md
 ---
@@ -21,4 +21,3 @@ github: https://github.com/rbteam/portal/tree/main/src/pages/java.md
     </p>
     <a href="https://stepik.org/course/90684/promo" class="btn btn-primary">Перейти</a>
 </div>
-

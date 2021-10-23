@@ -2,7 +2,7 @@
 title: PYTHON
 url: /pages/python/index.html
 langs: Python
-author: Axime
+authors: Axime
 editors: ra1nbow1
 github: https://github.com/rbteam/portal/tree/main/src/pages/python.md
 ---
