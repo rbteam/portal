@@ -7,11 +7,6 @@ editors: Axime
 github: Ссылка на файл
 ---
 <div class="col-md-6 mb-5">
-    <h6>Sololearn</h6>
-    <p class="text-muted">
-    Сайт/андроид приложение для обучения Python. 
-    </p>
-    <a href="https://www.sololearn.com" class="btn btn-primary">Sololearn</a>
     <h6>Metanit</h6>
     <p class="text-muted">
     Огромный ресурс, для изучения Python, C#/++, Java и тд.
