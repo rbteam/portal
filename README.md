@@ -2,6 +2,8 @@
 
 Это open-source проект, в котором собраны обучающие материалы для изучения различных языков программирования. Внести свой вклад может каждый. 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/85201233-1d79-4026-886b-59b6edbaa850/deploy-status)](https://app.netlify.com/sites/rbserver/deploys)
+
 # ✏️ Как контрибьютить
 
 Все реализовано через Пулл реквесты!
