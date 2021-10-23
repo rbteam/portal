@@ -15,7 +15,7 @@ github: https://github.com/rbteam/portal/tree/main/src/pages/javascript.md
 </div>
 
 <div class="col-md-6 mb-5">
-    <h6>Eloquent JavaScript</h6>
+    <h6>Выразительный JavaScript</h6>
     <p class="text-muted">
     «Выразительный JavaScript» позволит глубоко погрузиться в тему, научиться писать красивый и эффективный код. Вы познакомитесь с синтаксисом, стрелочными и асинхронными функциями, итератором, шаблонными строками и блочной областью видимости.
     </p>
