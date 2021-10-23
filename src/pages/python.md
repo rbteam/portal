@@ -12,7 +12,7 @@ github: https://github.com/rbteam/portal/tree/main/src/pages/python.md
 <p class="text-muted">
 Огромный ресурс, для изучения Python, C#/++, Java и тд.
 </p>
-<a href="https://metanit.com/" class="btn btn-primary">Перейти</a>
+<a href="https://metanit.com/python/" class="btn btn-primary">Перейти</a>
 </div>
 
 <div class="col-md-6 mb-5">
