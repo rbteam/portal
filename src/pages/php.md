@@ -1,7 +1,7 @@
 ---
-title: BASH
+title: PHP
 url: https://github.com/rbteam/portal/tree/main/src/pages/php.html
-langs: Bash
+langs: PHP
 author: ochko
 editors: нет
 github: https://github.com/rbteam/portal/tree/main/src/pages/php.md
