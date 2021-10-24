@@ -20,7 +20,7 @@
 title: Заголовок страницы
 url: /pages/название_файла/index.html
 langs: Языки программирования
-author: Авторы
+authors: Авторы
 editors: Редакторы
 github: Ссылка на файл
 ---
@@ -32,7 +32,7 @@ github: Ссылка на файл
 title: HTML/CSS
 url: /pages/html_css/index.html
 langs: HTML, CSS
-author: ra1nbow1
+authors: ra1nbow1
 editors: ra1nbow1
 github: https://github.com/rbteam/portal/tree/main/src/pages/html_css.md
 ---
