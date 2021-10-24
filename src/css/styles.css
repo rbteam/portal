@@ -314,7 +314,7 @@ h1, h2, h3, h4, h5, h6,
   color: #ffffff; }
 
 h1, .h1 {
-  font-size: 3rem; }
+    font-size: calc(26px + 22 * ((100vw - 320px) / (1920 - 320)));}
 
 h2, .h2 {
   font-size: 2.5rem; }
