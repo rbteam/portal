@@ -1,6 +1,6 @@
 ---
 title: PHP
-url: https://github.com/rbteam/portal/tree/main/src/pages/php/index.html
+url: /pages/php/index.html
 langs: PHP
 author: ochko
 editors:
