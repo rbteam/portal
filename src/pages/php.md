@@ -1,9 +1,9 @@
 ---
 title: PHP
-url: https://github.com/rbteam/portal/tree/main/src/pages/php.html
+url: https://github.com/rbteam/portal/tree/main/src/pages/php/php.html
 langs: PHP
 author: ochko
-editors: нет
+editors:
 github: https://github.com/rbteam/portal/tree/main/src/pages/php.md
 ---
 
