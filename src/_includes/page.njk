@@ -52,7 +52,9 @@
             <div class="col-md-6 mx-auto text-center">
                 <h2 class="text-uppercase">{{ title }}</h2>
                 <p class="text-muted lead">Авторы: {{ authors }}</p>
-                <p class="text-muted lead">Редакторы: {{ editors }}</p>
+                {%- if editors -%}
+                    <p class="text-muted lead">Редакторы: {{ editors }}</p>
+                {%- endif -%}
             </div>
         </div>
         <div class="row mt-5">
