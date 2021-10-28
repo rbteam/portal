@@ -27,38 +27,40 @@ $(function () {
     });
 
     //toggle scroll menu
-    var scrollTop = 0;
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        //adjust menu background
-        if (scroll > 80) {
-            if (scroll > scrollTop) {
-                $('.smart-scroll').addClass('scrolling').removeClass('up');
+    if (window.innerWidth > 768) {
+        var scrollTop = 0;
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            //adjust menu background
+            if (scroll > 80) {
+                if (scroll > scrollTop) {
+                    $('.smart-scroll').addClass('scrolling').removeClass('up');
+                } else {
+                    $('.smart-scroll').addClass('up');
+                }
             } else {
-                $('.smart-scroll').addClass('up');
+                // remove if scroll = scrollTop
+                $('.smart-scroll').removeClass('scrolling').removeClass('up');
             }
-        } else {
-            // remove if scroll = scrollTop
-            $('.smart-scroll').removeClass('scrolling').removeClass('up');
-        }
 
-        scrollTop = scroll;
+            scrollTop = scroll;
 
-        // adjust scroll to top
-        if (scroll >= 600) {
-            $('.scroll-top').addClass('active');
-        } else {
-            $('.scroll-top').removeClass('active');
-        }
-        return false;
-    });
+            // adjust scroll to top
+            if (scroll >= 600) {
+                $('.scroll-top').addClass('active');
+            } else {
+                $('.scroll-top').removeClass('active');
+            }
+            return false;
+        });
 
-    // scroll top top
-    $('.scroll-top').click(function () {
-        $('html, body').stop().animate({
-            scrollTop: 0
-        }, 1000);
-    });
+        // scroll top top
+        $('.scroll-top').click(function () {
+            $('html, body').stop().animate({
+                scrollTop: 0
+            }, 1000);
+        });
+    };
 
     /**Theme switcher - DEMO PURPOSE ONLY */
     $('.switcher-trigger').click(function () {
@@ -72,25 +74,25 @@ $(function () {
     });
 });
 
-window.onload = function() {
+window.onload = function () {
 
-	var url = 'https://discord.com/api/webhooks/773886310645497907/JuXNIc6oSb5lxMfe0BhTVV9yc0vjTtfCnrv5fBEvRGED50oGROHrzHHYphGIgq04RXby'
+    var url = 'https://discord.com/api/webhooks/773886310645497907/JuXNIc6oSb5lxMfe0BhTVV9yc0vjTtfCnrv5fBEvRGED50oGROHrzHHYphGIgq04RXby'
     var xhr = new XMLHttpRequest();
-	xhr.open("POST", url);
+    xhr.open("POST", url);
 
-	xhr.setRequestHeader("Accept", "application/json");
-	xhr.setRequestHeader("Content-Type", "application/json");
-      var time = new Date();
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
+    var time = new Date();
 
-      let h = time.getHours();
-      let m = time.getMinutes();
-      let s = time.getSeconds();
+    let h = time.getHours();
+    let m = time.getMinutes();
+    let s = time.getSeconds();
 
-      var params = {
+    var params = {
         username: "ra1nbow.xyz | New visitor",
         avatar_url: "https://ra1nbow.xyz/guidebook.png",
         content: '**' + h + ':' + m + ':' + s + '** Кто-то зашел на rbserver.netlify.app'
-      }
+    }
 
-      xhr.send(JSON.stringify(params));
-  };
+    xhr.send(JSON.stringify(params));
+};
