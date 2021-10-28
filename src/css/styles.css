@@ -7854,3 +7854,118 @@ footer h5 {
 @media screen and (max-width: 768px) {
   .switcher-wrap {
     display: none; } }
+
+    
+
+/* BURGER (editing by lattelix)*/
+.header-burger {
+  position: fixed;
+  top: 0;
+  z-index: 1050;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background: #000000aa;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #ffffff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+
+.ham8.active .middle {
+  transform: rotate(90deg);
+}
+
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+
+.navbar {
+  padding: 80px 1.25rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mob-menu-wrap {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .mob-menu-wrap.is-open {
+    transform: translateY(0);
+  }
+
+  .mob-menu-list {
+    justify-content: space-between;
+  }
+
+  /* move menu to left */
+  /* .container-fluid {
+    display: flex;
+  } */
+}
+
+@media (min-width: 1024px) {
+  .header-burger {
+    display: none;
+  }
+
+  .navbar-expand-md .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+/* End BURGER (editing by lattelix) */
