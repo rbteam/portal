@@ -7926,10 +7926,6 @@ footer h5 {
   overflow: hidden;
 }
 
-.navbar {
-  padding: 80px 1.25rem 1.5rem;
-}
-
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav {
     -ms-flex-direction: column;
@@ -7938,6 +7934,10 @@ footer h5 {
 }
 
 @media (max-width: 1024px) {
+  .navbar {
+    padding: 80px 1.25rem 1.5rem;
+  }
+
   .mob-menu-wrap {
     overflow: auto;
     position: fixed;
