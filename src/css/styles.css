@@ -7923,9 +7923,9 @@ footer h5 {
   stroke-dashoffset: -64px;
 }
 
-.page-lock {
+/* .page-lock {
   overflow: hidden;
-}
+} */
 
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav {
@@ -7956,8 +7956,7 @@ footer h5 {
     /* for full stretching  */
     /* height: 100vh;
     padding-bottom: 35px; */
-
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
 
   /* move menu to left */
