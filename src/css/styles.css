@@ -7863,8 +7863,13 @@ footer h5 {
   top: 0;
   z-index: 1050;
   width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 10px;
   background: #000000aa;
 }
@@ -7872,7 +7877,11 @@ footer h5 {
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  -o-transition: transform 400ms;
   transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -7880,15 +7889,21 @@ footer h5 {
 }
 
 .hamRotate.active {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .hamRotate180.active {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .line {
   fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  -o-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
   stroke: #ffffff;
   stroke-width: 5.5;
@@ -7901,14 +7916,26 @@ footer h5 {
 
 .ham8 .middle {
   stroke-dasharray: 40 142;
-  transform-origin: 50%;
+  -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  -o-transition: transform 400ms;
   transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .ham8 .bottom {
   stroke-dasharray: 40 85;
-  transform-origin: 50%;
+  -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: stroke-dashoffset 400ms, -webkit-transform 400ms;
+  transition: stroke-dashoffset 400ms, -webkit-transform 400ms;
+  -o-transition: transform 400ms, stroke-dashoffset 400ms;
   transition: transform 400ms, stroke-dashoffset 400ms;
+  transition: transform 400ms, stroke-dashoffset 400ms, -webkit-transform 400ms;
 }
 
 .ham8.active .top {
@@ -7916,7 +7943,9 @@ footer h5 {
 }
 
 .ham8.active .middle {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .ham8.active .bottom {
@@ -7926,7 +7955,9 @@ footer h5 {
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav {
     -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
 }
 
@@ -7939,16 +7970,22 @@ footer h5 {
     overflow: auto;
     position: fixed;
     top: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
     background-color: rgba(0, 0, 0, 0.9);
   }
 
   .mob-menu-wrap.is-open {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
   }
 
   .mob-menu-list {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   /* move menu to left */
@@ -7964,7 +8001,9 @@ footer h5 {
 
   .navbar-expand-md .navbar-nav {
     -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
   }
 }
 
