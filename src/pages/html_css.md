@@ -1,6 +1,6 @@
 ---
 title: HTML/CSS
-url: /pages/html_css/index.html
+url: pages/html_css/index.html
 langs: HTML, CSS
 authors: ra1nbow1
 editors: ra1nbow1

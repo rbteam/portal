@@ -1,6 +1,6 @@
 ---
 title: PHP
-url: /pages/php/index.html
+url: pages/php/index.html
 langs: PHP
 authors: ochko
 editors:

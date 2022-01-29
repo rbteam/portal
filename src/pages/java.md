@@ -1,6 +1,6 @@
 ---
 title: Java
-url: /pages/java/index.html
+url: pages/java/index.html
 langs: Java
 authors: Lato
 editors: Lato, ra1nbow1

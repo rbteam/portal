@@ -1,6 +1,6 @@
 ---
 title: JAVASCRIPT
-url: /pages/javascript/index.html
+url: pages/javascript/index.html
 langs: JavaScript
 authors: ra1nbow1, lattelix
 editors:
