@@ -1,6 +1,6 @@
 ---
 title: Go
-url: /pages/php/index.html
+url: /pages/go/index.html
 langs: Go
 authors: 4e
 editors:
