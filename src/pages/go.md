@@ -3,7 +3,6 @@ title: Go
 url: /pages/go/index.html
 langs: Go
 authors: 4e
-editors:
 github: https://github.com/rbteam/portal/tree/main/src/pages/go.md
 ---
 
