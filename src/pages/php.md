@@ -2,7 +2,7 @@
 title: PHP
 url: /pages/php/index.html
 langs: PHP
-authors: ochko
+authors: 4e
 editors:
 github: https://github.com/rbteam/portal/tree/main/src/pages/php.md
 ---
