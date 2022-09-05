@@ -1,6 +1,6 @@
 ---
 title: PHP
-url: pages/php/index.html
+url: /pages/php/index.html
 langs: PHP
 authors: 4e
 github: https://github.com/rbteam/portal/tree/main/src/pages/php.md
