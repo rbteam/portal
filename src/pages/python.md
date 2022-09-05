@@ -1,6 +1,6 @@
 ---
 title: PYTHON
-url: pages/python/index.html
+url: /pages/python/index.html
 langs: Python
 authors: Axime, R3alk1
 editors: ra1nbow1
